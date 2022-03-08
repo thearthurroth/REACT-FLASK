@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link, Route, Routes, useParams } from 'react-router-dom';
-import Login from './components/Login';
+import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 
 const App = () => {
