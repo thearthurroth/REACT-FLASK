@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import Members from './pages/Members'
+import { Link, Route, Routes, useParams } from 'react-router-dom';
+import Login from './components/Login';
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
 
@@ -7,7 +9,10 @@ const App = () => {
 
   return (
     <div>
-      <Members/>
+      <Routes>
+        <Route path='/' element={<Login/>}/>
+        <Route path='/dashboard/:userId' element={<Dashboard/>}/>
+      </Routes>
     </div>
   )
 }
